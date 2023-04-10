@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero Automático</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="icon" href="../Resources/Logo.png">
+</head>
+<body>
+
+    <main>
+        <div class="interfaz">
+            <div class="cajero">
+                <div class="screen">
+                    <div class="nav">
+                        <span class="material-symbols-outlined logo" style="color: red;">account_balance</span>
+                        <h4 class="logo">Banco Personal</h4>
+                    </div>
+                    <hr class="up">
+                    <div class="main">
+                        <a href="4-contra-correcta.html"><button class="boton back" type="submit" onclick="">Back</button></a>   
+                        <h1>Digite el Saldo a Retirar</h1>
+                        <input id="retiro" class="input" type="number" placeholder="Ingrese el saldo">
+                        <!-- <a href="2-cuentas.html"><button class="boton" type="submit" onclick="contraseña()">Continuar</button></a> -->
+                        <button class="boton" type="submit" onclick="retirarSaldo()">Continuar</button>
+                        <a href="../index.html"><button class="boton salir" type="submit" onclick="salir()">Salir</button></a>   
+                    </div>
+                    <hr class="up">
+                    <div class="nav">
+                        <div id="clock"></div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>

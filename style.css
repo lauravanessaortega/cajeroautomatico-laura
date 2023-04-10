@@ -1,0 +1,155 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: url(Resources/fondo.webp);
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: 'Roboto Slab', serif; */
+}
+
+.interfaz {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cajero {
+    background-color: #e923df;
+    border-radius: 2%;
+    display: flex;
+    width: 50vw;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.screen {
+    background: linear-gradient(to right, #EBF6FA, #75e87f);
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40vw;
+    height: 56vh;
+    border-radius: 1%;
+    box-shadow: 2px 2px 30px #1E3E58;
+    border: 2px #E1001A solid;
+}
+
+.nav {
+    /* position: absolute; */
+    background-color: white;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 5vh;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.logo {
+    padding: 1%;
+}
+
+.up {
+    border: 1px solid red;
+    width: 100%;
+    position: relative ;
+    
+}
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: #1A1C1D;
+    text-align: center;
+}
+
+.boton {
+    padding: 0.5rem;
+    background-color: #c40303;
+    letter-spacing: 1px;
+    color: white;
+    border: 2px solid #E1001A;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.boton:hover {
+    background-color: #ff0202;
+}
+
+.input {
+    border: 2px solid #ff0202;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 8px;
+    color: #1E3E58;
+    text-align: center;
+}
+
+.back {
+    position: absolute;
+    right: 0.5vw;
+    top: 1vh;
+}
+
+.salir {
+    position: absolute;
+    right: 0.5vw;
+    bottom: 1vh;
+}
+
+
+
+/* Media Query */
+
+@media only screen and (max-width: 1023px) {
+    body {
+      font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    body {
+      font-size: 0.7em;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+      font-size: 0.6em;
+    }
+
+    input[type="text"], input[type="password"], input[type="number"] {
+        width: 85%;
+        min-width: 50px;
+      }
+
+    .cajero {
+        width: 80vw;
+        height: 70vh;
+    }
+
+    .screen {
+        width: 80%;
+    }
+
+}
+  
